@@ -1,4 +1,4 @@
-# Define repoistory name
+# Define repository name
 
 Define description.
 
@@ -14,12 +14,12 @@ Define your business case for the specification.
 - Load your user stories, personna - supporting documents for the business case.
 
 ## Business Owners 
-- Carrier Business Owner: contact
-- Distributor Business Owner: contact
-- Solution Provider Business Owner: contact
+- Carrier Business Owner: Martin Paul - New York Life
+- Distributor Business Owner: Kevin Begley - Fidelity
+- Solution Provider Business Owner: Scott Bair - LUMA
 
 ## How to engage, contribute, and give feedback
-- These working groups are occuring on ....
+- These working groups are occuring on Mondays at 10am (ET) and Thursdays at 11am (ET)
 - Please contact the business owners or IRI (hpikus@irionline.org) to get added to the working group discussions. 
 
 ## Change subsmissions and reporting issues and bugs
