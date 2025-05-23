@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BeneficiaryUpdateMessage",
+  "type": "object",
+  "properties": {
+    "messageType": {
+      "type": "string",
+      "description": "Identifies what type of request",
+      "maxLength": 50
+    },
+    "partyrole": {
+      "type": "array",
+      "description": "List of party objects (typically beneficiaries)",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/partyObject"
+      }
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Contract number associated with the beneficiary record",
+      "maxLength": 50
+    },
+    "distributorUniqueId": {
+      "type": "string",
+      "description": "Unique identifier for the distributor (requester)",
+      "minLength": 4
+    },
+    "associatedFirmID": {
+      "type": "string",
+      "description": "Unique identifier for the associated firm"
+    },
+    "carrierUniqueId": {
+      "type": "string",
+      "description": "Unique identifier for the carrier (receiver)",
+      "minLength": 4
+    },
+    "transactionId": {
+      "type": "string",
+      "description": "Unique to identify the transaction",
+      "maxLength": 65
+    }
+  },
+  "required": [
+    "messageType",
+    "partyrole",
+    "contractNumber",
+    "distributorUniqueId",
+    "carrierUniqueId",
+    "transactionId"
+  ],
+  "definitions": {
+    "partyObject": {
+      "type": "object",
+      "properties": {
+        "roleType": { "type": "string" },
+        "partyId": { "type": "string" },
+        "name": { "type": "string" }
+      },
+      "required": ["roleType", "partyId"]
+    }
+  }
+}
