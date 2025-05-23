@@ -1,0 +1,15 @@
+{
+  "messageType": "BeneficiaryUpdate",
+  "partyrole": [
+    {
+      "roleType": "beneficiary",
+      "partyId": "B123456789",
+      "name": "Jane Doe"
+    }
+  ],
+  "contractNumber": "CON123456789",
+  "distributorUniqueId": "DIST0001",
+  "associatedFirmID": "FIRM002",
+  "carrierUniqueId": "CARR0001",
+  "transactionId": "TXN987654321"
+}
