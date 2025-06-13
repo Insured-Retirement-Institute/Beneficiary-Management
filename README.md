@@ -1,4 +1,4 @@
-# Define repository name
+# Beneficiary Management Working Group
 
 Define description.
 
