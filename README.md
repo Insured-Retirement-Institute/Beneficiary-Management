@@ -33,11 +33,11 @@ Measures of Success
 
 ## How to engage, contribute, and give feedback
 - These working groups are occuring on Mondays at 10am (ET) and Thursdays at 11am (ET)
-- Please contact the business owners or Hannah Pikus (hpikus@irionline.org) at IRI to get added to the working group discussions. 
+- Please contact the business owners or Hannah Pikus (hpikus@irionline.org) and Matt Hendrickson (mhendrickson@irionline.org) at IRI to get added to the working group discussions. 
 
 ## Change submissions and reporting issues and bugs
 
-Security issues and bugs should be reported directly to Katherine Dease kdease@irionline.org. Issues and bugs can be reported directly within the issues tab of a repository. Change requests should follow the standards governance workflow outlined on the [main page](https://github.com/Insured-Retirement-Institute).
+Security issues and bugs should be reported directly to Hannah Pikus at hpikus@irionline.org and Matt Hendrickson at mhendrickson@irionline.org. Issues and bugs can be reported directly within the issues tab of a repository. Change requests should follow the standards governance workflow outlined on the [main page](https://github.com/Insured-Retirement-Institute).
 
 ## Code of conduct
 
