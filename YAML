@@ -13,7 +13,7 @@ info:
     Outcomes are communicated asynchronously by the Carrier using BOOKED or REJECTED
     events.'
   contact:
-    name: FIA Support
+    name: Fidelity Investments - FIA Support
     email: fia-support@fmr.com
 servers:
   - url: https://api.fidelity.com
@@ -340,10 +340,14 @@ components:
           type: string
           description: Originating channel or system from which the beneficiary change request was submitted.
           enum:
-            - FIDELITY_UI
+            - CLIENT_PORTAL
             - ADVISOR_PORTAL
+            - MOBILE_APP
             - CALL_CENTER
-            - CARRIER_PORTAL
+            - PAPER
+            - BATCH
+            - API
+            - THIRD_PARTY_PLATFORM
             - OTHER
         requestedByPartyId:
           type: string
@@ -404,7 +408,7 @@ components:
       additionalProperties: false
       required:
         - beneficiaryType
-        - relationship
+        - relationshipType
         - designationAmountType
         - name
       properties:
@@ -418,9 +422,24 @@ components:
             - CONTINGENT
             - TERTIARY
           description: Classification of beneficiary (PRIMARY, CONTINGENT, or TERTIARY).
-        relationship:
+        relationshipType:
           type: string
-          description: Relationship of the beneficiary to the annuitant or contract owner (e.g., spouse, child, sibling).
+          enum:
+            - SPOUSE
+            - DOMESTIC_PARTNER
+            - PARENT
+            - SIBLING
+            - CHILD
+            - GRANDCHILD
+            - OTHER_PERSON
+            - TRUST
+            - ESTATE
+            - ORGANIZATION
+          description: Standardized Relationship of the beneficiary to the annuitant or contract owner (e.g., spouse, child, sibling).
+        relationshipDescription:
+          type: string
+          maxLength: 180
+          description: Free-form description of relationship when relationshipType is OTHER or additional detail is required.
         designationAmountType:
           type: string
           enum:
