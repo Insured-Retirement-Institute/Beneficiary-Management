@@ -277,6 +277,8 @@ components:
       allOf:
         - $ref: '#/components/schemas/BeneficiaryEventBase'
         - type: object
+          required:
+            - requestorContext
           properties:
             beneficiaryEventType:
               type: string
@@ -314,6 +316,8 @@ components:
     RequestorContext:
       type: object
       additionalProperties: false
+      required:
+            - requestorRole
       properties:
         requestorRole:
           type: string
